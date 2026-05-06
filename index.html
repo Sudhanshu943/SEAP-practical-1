@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEAP Practical-1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">SEAP Practical-1</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h1>Welcome to SEAP Practical-1</h1>
+      <p>A hands-on practical project exploring modern web development with HTML, CSS, and JavaScript.</p>
+      <a href="#features" class="btn">Explore Features</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2>About This Project</h2>
+      <p>
+        SEAP Practical-1 is designed to demonstrate core concepts in Software Engineering
+        and Application Programming. This project covers front-end fundamentals, clean design
+        principles, and structured project organisation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features" id="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Responsive Design</h3>
+          <p>Built with a mobile-first approach to ensure a seamless experience across all devices.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Modern UI</h3>
+          <p>Clean, minimal interface using modern HTML and CSS best practices.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Fast &amp; Lightweight</h3>
+          <p>No external dependencies — pure HTML, CSS, and JavaScript for maximum performance.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3>Easy to Extend</h3>
+          <p>Modular structure makes it simple to add new pages, sections, or features.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Have questions or feedback? Reach out below.</p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-error" class="error-msg" style="display:none;">Please fill in all required fields.</p>
+      <p id="form-success" class="success-msg" style="display:none;">Thank you! Your message has been sent.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 SEAP Practical-1. Licensed under the <a href="https://choosealicense.com/licenses/mit/" target="_blank">MIT License</a>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
