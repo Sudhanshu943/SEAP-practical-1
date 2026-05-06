@@ -1,1 +1,0 @@
-# SEAP-practical-1
